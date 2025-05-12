@@ -1,14 +1,21 @@
-import Person  from "./components/Person.jsx";
-import Props from "./components/Props.jsx";
-import Product from "./components/Product.jsx";
-function App() {
-  return (
-    <div>
-   <Person name="hammad ali" age="15" />
-<Product name="lapotop" price="14"/>
+import { useState } from "react"
 
-        </div>
-  )
+
+const App=()=> {
+const [count,setCount]=useState(0)
+
+
+const Increment =()=>setCount(count+1)
+  return  <section>
+<h1>
+  {count}
+</h1>
+<button onClick={Increment}>+</button>
+
+  </section>
+ 
+
+
 }
 
 export default App

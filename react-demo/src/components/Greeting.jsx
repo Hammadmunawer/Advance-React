@@ -1,16 +1,7 @@
 import React from 'react'
 
-function Greeting() {
-  const greet="hello"
-  const date=new Date() 
-  
-    return (
-    <div>
-      <h2>{greet}</h2>
-      <p>Date:{date.getDate()}</p>
-
-    </div>
-  )
+const Greeting=(props)=>{
+  return props.timeOfDay==='morning'?  (<h1>good morning</h1>): (<h1>good After noon</h1>)
 }
 
-export default Greeting
+export default Greeting   
