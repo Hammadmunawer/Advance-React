@@ -1,19 +1,14 @@
-import { useState } from "react"
-
+import Counter from "./components/Counter"
+import Profile from "./components/Profile"
+import ShoppingList from "./components/ShoppingList"
+import TodoList from "./components/TodoList"
 
 const App=()=> {
-const [count,setCount]=useState(0)
-
-
-const Increment =()=>setCount(count+1)
-  return  <section>
-<h1>
-  {count}
-</h1>
-<button onClick={Increment}>+</button>
-
-  </section>
- 
+  return  (
+    <div>
+<ShoppingList/>
+    </div>
+  )
 
 
 }
