@@ -16,7 +16,7 @@ const handleSubmit=e=>{
     };
 
     setItems((prevItems)=> [...prevItems,newItem])
-
+          
     setName('')
     setQuantity(' ')
 }
